@@ -106,6 +106,10 @@ mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 apt update && apt install code-insiders
 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+
 add-apt-repository ppa:ubuntuhandbook1/corebird -y
 add-apt-repository ppa:mozilla-daily/ppa -y
 add-apt-repository ppa:remmina-ppa-team/remmina-next -y
