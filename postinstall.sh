@@ -110,6 +110,15 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 
+wget https://sourceforge.net/projects/stacer/files/v1.0.8/stacer_1.0.8_amd64.deb
+sudo dpkg -i stacer_1.0.8_amd64.deb
+rm -r stacer_1.0.8_amd64.deb
+
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+dpkg -i gitkraken-amd64.deb
+rm -r gitkraken-amd64.deb
+
+
 add-apt-repository ppa:ubuntuhandbook1/corebird -y
 add-apt-repository ppa:mozilla-daily/ppa -y
 add-apt-repository ppa:remmina-ppa-team/remmina-next -y
